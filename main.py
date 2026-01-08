@@ -22,6 +22,7 @@ class DoraController:
             self.process = None
         else:
             subprocess.run(["dora", "stop"], check=False)
+        subprocess.run(["dora", "destroy"], check=False)
 
 def main():
     try:
